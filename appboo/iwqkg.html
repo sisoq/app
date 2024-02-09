@@ -1,0 +1,249 @@
+<html>    
+<head>
+<title>User Profile</title>
+<link rel="stylesheet" href="userpro.css">        
+<style>
+
+.menu{
+    background-color: #4CAF50;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+li {
+float:left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #4CAFFF;
+}
+
+.roundedcorners {
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px; 
+    width: 260px;
+    height: 120px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: inherit;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 0px;
+    border-radius: 55px;
+    text-shadow: -2px 2px #1B5E20;
+}
+
+.button:hover{
+   background-color: #4CAFFF; 
+}
+
+    h4{
+font-size: 18px;    
+color: #4CAF50;
+display: block;
+padding: 3px 10px;
+}
+
+    h2{
+ color:white;   
+}
+
+    .menuleft:hover{
+background-color: #4CAFFF;     
+}
+
+    .menuleft{
+ padding:0px 5px;   
+}
+            
+
+    td{
+vertical-align: middle;
+color: #4CAF50;    
+padding-top: 10px;
+}
+            
+.bold{
+ font-weight: bold;
+ text-shadow: -1px 1px lightgray;   
+}
+    
+body{
+font-family:sans-serif;
+background-color: #4CAF50;
+}
+
+.textm{
+text-align: center;    
+white-space: nowrap;
+overflow: hidden;   
+}
+    
+.footer{
+width: 100%;
+height: 5%;    
+}
+       
+</style>
+</head>
+
+<body>
+
+<div class="menu" style="float:top; width: 100%; height:11%;">
+        <div class="menuleft" style="float:left;">
+        <a href="registration.html" class="logo">
+        <img src="imag/baseline_search_black_24dp.png" width="50px" height="50px" style="float:left;">
+        <h2 style="float:left;">Book Store</h2>
+        </a>
+        </div>
+        <div class="menuright" style="float:left;">
+        <ul> 
+            <li><a href="homepage.html" id="menufirstelement">Home</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="userpro.html">Profile</a></li>
+            <li><a href="shoppingcart.html">Shopping Cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+        </ul>   
+    </div>    
+</div>
+    
+
+<img src="imag/baseline_arrow_back_black_24dp.png" height="100%" width="100%">   
+    
+<div>
+<table style="margin-left:10px;padding:50px;">
+    <tr>
+<td class="roundedcorners"  style="background-color:white;">        
+    <feComponentTransfer>
+    <table  id="info1">
+	<tr>
+    <th colspan="2"><img src="imag/5lY42eHs_400x400.jpg"></th>
+    </tr>
+    <tr>
+	<td colspan="2"><input type="button" value="Edit My Profile" class="button" formaction="userpro.html" style="width:100%;"></td>
+	<td><br></td>
+    </tr>
+    <tr>    
+	<td class="bold">Name: </td>
+	<td>Kanak Sharma</td>
+	</tr>
+	<tr>
+	<td class="bold">Gender: </td>
+	<td>Male</td>
+	</tr>
+    <tr>
+	<td class="bold">Residence: </td>
+	<td>Thane</td>
+	</tr>
+    <tr>
+	<td class="bold">Location: </td>
+	<td>Shirpur</td>
+	</tr> 
+    <tr>
+    <td class="bold">Ranking: </td>
+	<td>Avid Reader</td>
+	</tr>
+</table> 
+        </center>
+        </td>
+<td style="width:50px;"></td>
+<td class="roundedcorners"  style="background-color:white;">
+<table id="info2">
+    <tr id="bio1">    
+	   <td class="bold">Past Reads: </td>
+	   <td class="list1">
+        <table>
+        <tr class="bookphoto">
+            <td><center><img src="imag/instagram-icon.png" width="100px" height="150px"></center></td>
+            <td><center><img src="imag/instagram-icon.png" width="100px" height="150px"></center></td>
+        <td><center><img src="imag/instagram-icon.png" width="100px" height="150px"></center></td>
+        <td><center><img src="imag/instagram-icon.png" width="100px" height="150px"></center></td>
+        <td><center><img src="imag/instagram-icon.png" width="100px" height="150px"></center></td> 
+        </tr>
+        
+        <tr class="textm">
+            <td>Animal Farm</td>
+            <td>Pride and Prejudice</td>
+            <td>Julius Ceaser</td>
+            <td>Wings of Fire</td>
+            <td>Da Vinci's Code</td>
+        </tr>    
+        
+        <tr  class="textm">
+            <td>George Orwell</td>
+            <td>Charles Dickens</td>
+            <td>William Shakespeare</td>
+            <td>A.P.J. Abdul Kalam</td>
+            <td>Dan Brown</td>
+        </tr>    
+        </table>        
+       </td>    
+	</tr> 
+    
+    <tr id="bio2">
+        <td class="bold">To Read List: </td>
+        <td class="list2">
+        <table>
+        <tr class="bookphoto">
+        <td><center><img src="imag/facebook-icon.png" width="100px" height="150px"></center></td>
+        <td><center><img src="imag/facebook-icon.png" width="100px" height="150px"></center></td>
+        <td><center><img src="imag/facebook-icon.png" width="100px" height="150px"></center></td>
+        <td><center><img src="imag/facebook-icon.png" width="100px" height="150px"></center></td>
+        <td><center><img src="imag/facebook-icon.png" width="100px" height="150px"></center></td>    
+        </tr>
+        
+        <tr  class="textm">
+            <td>Animal Farm</td>
+            <td>Pride and Prejudice</td>
+            <td>Julius Ceaser</td>
+            <td>Wings of Fire</td>
+            <td>Da Vinci's Code</td>
+        </tr>    
+        
+        <tr  class="textm">
+            <td>George Orwell</td>
+            <td>Charles Dickens</td>
+            <td>William Shakespeare</td>
+            <td>A.P.J. Abdul Kalam</td>
+            <td>Dan Brown</td>
+        </tr>    
+        </table> 
+        </td>
+	</tr>
+</table> 
+        </td>
+    </tr>    
+</table>  
+</div> 
+<div class="footer">
+    <center>
+    <h5 style="color:white;">Copyright &copy; 1995-2016 Kanak Sharma. All Rights Reserved.</h5>
+    </center>
+</div>     
+</body>
+</html>

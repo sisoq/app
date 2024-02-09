@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csss/css12.css">
+  <link rel="stylesheet" href="csss/styles.css">
+  <link rel="stylesheet" href="jss/cardsjs.js">
+ 
+  <title>Your Modern Website</title>
+  <link rel="icon" href="imag/2x1_NSwitch_EaSportsFc24_image1600w.jpg">
+  <style>
+    /* القواعد العامة للصفحة */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d6d6d6;
+      font-size: 18px;
+    }
+
+    /* قواعد للشاشات الصغيرة (أجهزة محمولة) */
+    @media screen and (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+      /* أي قواعد إضافية للهواتف المحمولة */
+    }
+
+    /* قواعد للشاشات المتوسطة (أجهزة لوحية) */
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+      body {
+        font-size: 16px;
+      }
+      /* أي قواعد إضافية للأجهزة اللوحية */
+    }
+
+    /* قواعد للشاشات الكبيرة (أجهزة سطح المكتب) */
+    @media screen and (min-width: 100%) {
+      body {
+        font-size: 18px;
+      }
+      /* أي قواعد إضافية لأجهزة سطح المكتب */
+    }
+
+    /* تصميم الهيدر */
+    .header {
+      height: 10%;
+    }
+
+    /* تصميم الكونتنت */
+    .content {
+      height: 100%;
+    }
+
+    /* تصميم الفوتر */
+    .footer {
+      height: 30vh;
+      background-color: #ff0000;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* تصميم الروابط داخل الفوتر */
+    footer p {
+      font-size: 20px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin: 5px 0;
+    }
+
+    /* تحديد ارتفاع الصفحة بالكامل */
+    html, body {
+      height: 100%;
+    }
+
+    /* أنماط البطاقة للهواتف المحمولة */
+    @media (max-width: 800px) {
+      .card {
+        position: relative;
+        display: inline-block;
+        margin-right: 15px;
+        width: 205px;
+        height: 240px;
+        transition: transform 0.3s;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card img {
+        width: 105%;
+        height: 90%;
+        object-fit: fill;
+        object-position: left top;
+        border-radius: 15px;
+      }
+
+      .card h3 {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        margin: 10px;
+        font-size: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    /* تصميم القسم السفلي (footer) */
+    .main {
+      text-align: center;
+    }
+
+    .code-rectangle {
+      background-color: #c04a4a;
+      border-radius: 4px;
+      height: 40px;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search {
+      display: inline-flex;
+      align-items: center;
+      background-color: #ffffff;
+      color: #522cad;
+      padding: 1px;
+      border-radius: 6px;
+      border: 1px solid #4d9b20;
+    }
+
+    .search :is(input, button) {
+      background: transparent;
+      color: inherit;
+      border: none;
+      outline: none;
+    }
+
+    .searchinput {
+      width: 0;
+      transition: width 0.5s;
+    }
+
+    .searchbutton {
+      display: grid;
+      place-items: center;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+      transition: color 0.25s;
+    }
+
+    .search :focus-within {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <body>
+    <section id="home" class="content">
+      <main>
+        <div class="code-rectangle">
+          <a href="index.html">
+            <div class="logo">
+              <img class="logo" src="imag/ea-sports-fc-24-logo-B3CB1AA5C1-seeklogo.com.png">
+            </div>
+          </a>
+          <a href="https://sisoq.github.io/my/index4.html">الخدمات</a>
+          <a href="https://sisoq.github.io/shop-vini/">المنتجات</a>
+          <a href="https://sisoq.github.io/my/index5.html">اتصل بنا</a>
+          <a href="https://sisoq.github.io/tajre/index21.html">test</a>
+        </div>
+      </main>
+      <div class="image-container">
+        <!-- ... (بقية كود الشرائح) ... -->
+      </div>
+      <div class="menu">
+        <div class="menu-button fixed-menu-button">
+          <img class="menu-icon" src="imag/baseline_menu_black_24dp.png" alt="">
+        </div>
+        <div class="popup float">
+          <div style="height: 50px;">
+            <a href="index.html">
+              <div class="logo1">
+                <img class="logo1" src="imag/ea-sports-fc-24-logo-B3CB1AA5C1-seeklogo.com.png">
+              </div>
+            </a>
+          </div>
+          <div style="height: 700px;">
+            <!-- ... (قائمة الروابط) ... -->
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="about" class="content">
+      <!-- بطاقة المنتج -->
+      <article class="card" onclick="showProductInfo('Microsoft Laptop', 'منتج مايكروسوفت', 'شركة مايكروسوفت')">
+        <figure>
+          <img src="imag/2ch_EaSportsFc24_image1600w.jpg" alt="Microsoft Laptop">
+          <figcaption>
+            <h3>Microsoft Laptop</h3>
+          </figcaption>
+        </figure>
+        <div class="popup-content">
+          <p>محتوى هام 1</p>
+          <!-- يمكنك إضافة المزيد من المعلومات هنا -->
+        </div>
+      </article>
+  
+      <!-- طرحة المنتج -->
+      <div id="productPopup" style="display: none;">
+        <!-- محتوى الطرحة سيظهر هنا -->
+      </div>
+  
+      <!-- باقي البطاقات -->
+      <article class="card">
+        <!-- ... (البطاقات الأخرى) ... -->
+      </article>
+    </section>
+  
+    <section id="services" class="content" style="margin-top: 40%;">
+      <h2>Our Services</h2>
+      <!-- Add your content for the third section here -->
+    </section>
+  
+    <section id="products" class="content" style="margin-top: 45%;">
+      <h2>Our Products</h2>
+      <!-- Add your content for the fourth section here -->
+    </section>
+  
+    <!-- ... (بقية الكود) ... -->
+  
+    <!-- JavaScript for Section Navigation -->
+    <script>
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+  
+      function showProductInfo(productName, productDescription, manufacturer) {
+        var productPopup = document.getElementById("productPopup");
+  
+        // عرض معلومات المنتج
+        productPopup.innerHTML = `<h2>${productName}</h2><p>${productDescription}</p><p>الشركة المصنعة: ${manufacturer}</p>`;
+  
+        // عرض الطرحة
+        productPopup.style.display = "block";
+      }
+    </script>
+  
+    <section id="test" class="content" style="margin-top: 99%;">
+      <!-- ... (قسم الفوتر) ... -->
+    </section>
+</body>
+</html>
